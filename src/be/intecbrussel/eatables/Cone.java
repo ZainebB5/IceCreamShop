@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 public class Cone implements Eatable{
     private Flavor[] balls;
-    //private static Scanner scanner = new Scanner(System.in);
 
     public enum Flavor {
         STRAWBERRY, BANANA, CHOCOLATE, VANILLA, LEMON, STRACIATELLA, MOKKA, PISTACHE;

@@ -32,13 +32,21 @@ public class IceCreamAppV2 {
 
         try {
             order[0] = iceCreamCar.orderCone(flavors);
+        }catch  (NoMoreIceCreamExeption e) {
+            System.out.println("There are not enough balls");
+        }
+        try{
             order[1] = iceCreamCar.orderMagnum(magnum1);
+        }catch  (NoMoreIceCreamExeption e) {
+            System.out.println("There are not enough magnum ");
+        }
+        try {
             order[2] = iceCreamCar.orderIceRocket();
             order[3] = iceCreamCar.orderIceRocket();
             order[4] = iceCreamCar.orderIceRocket();
             order[5] = iceCreamCar.orderIceRocket();
         } catch (NoMoreIceCreamExeption e) {
-            e.getMessage();
+            System.out.println("There are not enough iceRocket ");
         }
 
         for (int i = 0; i < order.length; i++){
