@@ -51,7 +51,7 @@ public class IceCreamCar implements IceCreamSeller{
 
     private IceRocket prepareIceRocket() throws NoMoreIceCreamExeption {
         if (stock.getIceRockets() > 0){
-            profit += priceList.getBallprice();
+            profit += priceList.getRocketPrice();
             stock.setIceRockets(stock.getIceRockets() - 1);
             return new IceRocket();
         }
